@@ -18,6 +18,10 @@
   border-top: 1px solid rgba(128, 128, 128, 0.39);
 }
 
+.menu-item:hover ~ .menu-item-img{
+  display: block;
+}
+
 .menu-item-text{
   display: block;
   margin-bottom:10px ;
@@ -27,7 +31,7 @@
 }
 
 .menu-item-text:hover{
-  color:rgb(30, 87, 172);
+  color:rgb(30, 87, 172)
 }
 
 .menu-item-input{
@@ -35,8 +39,12 @@
   position: absolute;
 }
 
-.menu-item-input:checked + .menu-item-img{
+.menu-item-input:checked ~ .menu-item-img{
   display: block;
+}
+
+.menu-item-input:checked ~ .menu-item-text{
+  color:rgb(30, 87, 172);
 }
 
 .menu-item-img{
